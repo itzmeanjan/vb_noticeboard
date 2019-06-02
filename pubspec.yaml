@@ -1,0 +1,9 @@
+name: vb_noticeboard
+description: A simple Dart wrapper for fetching, parsing and extracting notices from Visva-Bharati, Santiniketan's Official website
+version: 1.0.0
+author: Anjan Roy<anjanroy@yandex.com>
+homepage: https://github.com/itzmeanjan/vb_noticeboard
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+dependencies:
+  html: ^0.14.0+2
