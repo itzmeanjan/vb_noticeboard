@@ -2,7 +2,13 @@ import 'dart:convert' show json, utf8;
 import 'dart:io' show File;
 import 'dart:async' show Completer;
 
+/// Converts notices back to map, from json formatted file
+///
 class ExtractFromJson {
+  /// Takes filepath, reads file and returns deserialized data
+  ///
+  /// In case of absense of file in target location, returns empty map
+  ///
   static Future<Map<String, Map<String, String>>> extractIt(String filePath) {
     var completer = Completer<Map<String, Map<String, String>>>();
     try {

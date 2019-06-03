@@ -9,5 +9,8 @@ main() {
             ),
         onError: (e) => print(e),
   );*/
-  ExtractFromJson.extractIt('data.json').then((data) => print(data));
+  ExtractFromJson.extractIt('data.json').then(
+    (data) => print(data),
+    onError: (e) => print(e),
+  );
 }

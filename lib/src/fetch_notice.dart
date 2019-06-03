@@ -2,12 +2,19 @@ import 'dart:io' show HttpClient, HttpClientRequest, HttpClientResponse;
 import 'dart:async' show Completer;
 import 'dart:convert' show utf8;
 
+/// Fetches notices from Visva-Bharati Official Website
+///
+/// takes a single argument, targetURL, which has a default value
+///
 class FetchNotice {
   String targetURL;
   FetchNotice(
       {this.targetURL:
           'http://www.visvabharati.ac.in/list_all_notice.html/type/notice'});
 
+  /// Fetches html webpage, from url provided
+  /// So that it next step this can be parsed
+  ///
   Future<String> fetch() {
     var completer = Completer<String>();
     HttpClient()
