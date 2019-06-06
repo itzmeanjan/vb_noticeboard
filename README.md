@@ -3,6 +3,8 @@ A simple Dart wrapper for fetching, parsing and extracting notices from **Visva-
 
 Show some :heart: by putting :star:
 
+**This plugin is readily available for [use](https://pub.dev/packages/vb_noticeboard).**
+
 ## what does it do ?
 - Can fetch list of notices from *Visva-Bharati, Santiniketan's* Official [Website](http://www.visvabharati.ac.in)
 - Parse them and extract them from html page
